@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alumni+Sans&family=Barlow+Semi+Condensed:wght@300&family=Orbitron:wght@900&family=Rajdhani&family=Zen+Kurenaido&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+/*  ZONA CENTRAL    */
+
+main{
+    height: 80vh;
+    padding: 20px;
+    background: #FFEC3E;
+    background: -webkit-radial-gradient(top right, #FFEC3E, #9002FE);
+    background: -moz-radial-gradient(top right, #FFEC3E, #9002FE);
+    background: radial-gradient(to bottom left, #FFEC3E, #9002FE);
+}
+
+/*SEARCH BAR*/
+
+#product-searchbar{
+    margin-top: 40px;
+}
+
+#product-searchbar form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#product-searchbar form input{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#product-searchbar form input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+#product-searchbar form input[type="submit"]{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
+
+#product-searchbar form input[type="submit"]:hover{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.99);
+}
+
+/*  PRODUCT TABLE   */
+#conte-productDetails{
+    margin-top: 20px;
+    
+}
+
+#conte-productDetails table{
+    width: 100%;
+}
+
+#conte-productDetails tr, th, td, table{
+    border-collapse: collapse;
+}
+
+#conte-productDetails th{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: lighter;
+    padding: 8px;
+}
+
+#conte-productDetails td{
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding: 5px
+}
+
+#conte-productDetails tbody > tr:hover{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    cursor: pointer;
+}
+
+/*  PIE DE PAGINA   */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*  CABECERA DE PAGINA  */
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header img{
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+header p{
+    color: white;
+    cursor: pointer
+}
+
+header form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header form div:nth-child(1){
+    display: flex;
+    gap: 20px;
+}
+
+header form div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+header form div:nth-child(1) input{
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+}
+
+header form div:nth-child(1) input::placeholder{
+    color: white;
+}
+
+header form div:nth-child(2) input[type="submit"]{
+    padding: 5px 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+header form div:nth-child(2) input[type="submit"]:hover{
+    background-color: white;;
+    color: black;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        height: fit-content;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        height: fit-content;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        height: 80vh;
+    }
+}
